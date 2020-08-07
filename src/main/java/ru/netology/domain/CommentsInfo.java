@@ -5,9 +5,38 @@ import java.time.LocalDateTime;
 public class CommentsInfo {
     private int count;
     private boolean canPost;
+    private boolean groupsCanPost;
+    private boolean canClose;
+
+    public boolean isGroupsCanPost() {
+        return groupsCanPost;
+    }
+
+    public void setGroupsCanPost(boolean groupsCanPost) {
+        this.groupsCanPost = groupsCanPost;
+    }
+
+    public boolean isCanClose() {
+        return canClose;
+    }
+
+    public void setCanClose(boolean canClose) {
+        this.canClose = canClose;
+    }
+
+    public boolean isCanOpen() {
+        return canOpen;
+    }
+
+    public void setCanOpen(boolean canOpen) {
+        this.canOpen = canOpen;
+    }
+
+    private boolean canOpen;
+
     private String commentDescription;
     private int countLike;
-    private static LocalDateTime localDateTime=LocalDateTime.now();
+    private static LocalDateTime localDateTime = LocalDateTime.now();
 
     public int getCount() {
         return count;
