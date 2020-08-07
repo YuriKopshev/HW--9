@@ -14,11 +14,11 @@ public class PostManager {
     }
 
 
-    public void wallDelete(Post[]posts) {
+    public void wallDelete(int ownerId,int postId) {
 
     }
 
-    public Post[] wallSearch(Post[]posts) {
+    public Post[] wallSearch(int ownerId,String domain,String query,int ownersOnly,int count,int offset) {
 
         return null;
     }

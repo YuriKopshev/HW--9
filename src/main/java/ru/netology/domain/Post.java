@@ -6,6 +6,44 @@ import java.util.List;
 
 
 public class Post {
+    private CommentsInfo commentsInfo;
+    private LikesInfo likesInfo;
+    private Geo geo;
+    private PostSource postSource;
+    private RepostsInfo repostsInfo;
+
+    public LikesInfo getLikesInfo() {
+        return likesInfo;
+    }
+
+    public void setLikesInfo(LikesInfo likesInfo) {
+        this.likesInfo = likesInfo;
+    }
+
+    public Geo getGeo() {
+        return geo;
+    }
+
+    public void setGeo(Geo geo) {
+        this.geo = geo;
+    }
+
+    public PostSource getPostSource() {
+        return postSource;
+    }
+
+    public void setPostSource(PostSource postSource) {
+        this.postSource = postSource;
+    }
+
+    public RepostsInfo getRepostsInfo() {
+        return repostsInfo;
+    }
+
+    public void setRepostsInfo(RepostsInfo repostsInfo) {
+        this.repostsInfo = repostsInfo;
+    }
+
     private int postId;
     private int ownerId;
     private int fromId;
@@ -160,7 +198,6 @@ public class Post {
     private String imageURL;
     private String readLinkButtonURL;
     private int viewsCount;
-    private CommentsInfo commentsInfo;
     private static LocalDateTime localDateTime = LocalDateTime.now();
     private boolean canPin;
     private boolean canDelete;
